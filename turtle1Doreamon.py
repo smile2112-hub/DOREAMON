@@ -1,13 +1,10 @@
 from turtle import *
-
-
-# 无轨迹跳跃
+
 def my_goto(x, y):
     penup()
     goto(x, y)
     pendown()
-
-# 眼睛
+
 def eyes():
     fillcolor("#ffffff")
     begin_fill()
@@ -27,7 +24,7 @@ def eyes():
     end_fill()
 
 
-# 胡须
+
 def beard():
     my_goto(-32, 135)
     seth(165)
@@ -53,7 +50,7 @@ def beard():
     seth(-13)
     fd(60)
 
-# 嘴巴
+
 def mouth():
     my_goto(5, 148)
     seth(270)
@@ -63,7 +60,7 @@ def mouth():
     seth(230)
     circle(-120, 100)
 
-# 围巾
+
 def scarf():
     fillcolor('#e70010')
     begin_fill()
@@ -78,7 +75,7 @@ def scarf():
     circle(-5, 90)
     end_fill()
 
-# 鼻子
+
 def nose():
     my_goto(-10, 158)
     seth(315)
@@ -87,7 +84,7 @@ def nose():
     circle(20)
     end_fill()
 
-# 黑眼睛
+
 def black_eyes():
     seth(0)
     my_goto(-20, 195)
@@ -112,7 +109,7 @@ def black_eyes():
 
 
 
-# 脸
+
 def face():
 
     fd(183)
@@ -139,8 +136,7 @@ def face():
     penup()
     seth(180)
     fd(64)
-
-# 头型
+
 def head():
     penup()
     circle(150, 40)
@@ -150,27 +146,15 @@ def head():
     circle(150, 280)
     end_fill()
 
-# 画哆啦A梦
+
 def Doraemon():
-    # 头部
-    head()
-
-    # 围脖
-    scarf()
-
-    # 脸
-    face()
-
-    # 红鼻子
-    nose()
-
-    # 嘴巴
+    
+    head()
+    scarf()
+    face()
+    nose()
     mouth()
-
-    # 胡须
-    beard()
-
-    # 身体
+    beard()
     my_goto(0, 0)
     seth(0)
     penup()
@@ -228,14 +212,14 @@ def Doraemon():
     fd(40)
     end_fill()
 
-    # 左手
+    
     seth(70)
     fillcolor('#ffffff')
     begin_fill()
     circle(-30)
     end_fill()
 
-    # 脚
+    
     my_goto(103.74, -182.59)
     seth(0)
     fillcolor('#ffffff')
@@ -258,7 +242,7 @@ def Doraemon():
     fd(10)
     end_fill()
 
-    # 右手
+    
     my_goto(-133.97, -91.81)
     seth(50)
     fillcolor('#ffffff')
@@ -266,7 +250,7 @@ def Doraemon():
     circle(30)
     end_fill()
 
-    # 口袋
+    
     my_goto(-103.42, 15.09)
     seth(0)
     fd(38)
@@ -283,7 +267,7 @@ def Doraemon():
     seth(0)
     fd(70)
 
-    #铃铛
+    
     my_goto(-103.42, 15.09)
     fd(90)
     seth(70)
@@ -310,13 +294,13 @@ def Doraemon():
     dot(10)
     my_goto(0, -150)
 
-    # 画眼睛
+   
     black_eyes()
 
 if __name__ == '__main__':
     screensize(800,600, "#f0f0f0")
-    pensize(3)  # 画笔宽度
-    speed(9)    # 画笔速度
+    pensize(3)  
+    speed(9)    
     Doraemon()
     my_goto(100, -300)
     write('by Neejanand', font=("Bradley Hand ITC", 30, "bold"))
